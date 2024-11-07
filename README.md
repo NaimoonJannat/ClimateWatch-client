@@ -18,7 +18,7 @@ ClimateWatch is a frontend project designed to keep users informed about weather
 
 ## Live Site
 
-Explore the ClimateWatch frontend live: [ClimateWatch Live Site](https://your-live-site-link.com)
+Explore the ClimateWatch frontend live: [ClimateWatch Live Site]()
 
 ## Project Summary
 
@@ -29,3 +29,25 @@ With ClimateWatch, users can not only stay informed but also contribute positive
 ---
 
 Thank you for exploring ClimateWatch and joining us in the effort towards a sustainable future!
+
+To clone and install the frontend locally, follow these steps:
+
+1. **Clone the repository:**
+#
+   ```bash
+   git clone https://github.com/NaimoonJannat/ClimateWatch-client.git
+   cd ClimateWatch-client
+   ```
+2. **Install Dependencies:**
+#
+```bash
+npm install
+```
+
+3. **Run the project**
+#
+```bash
+npm run dev
+```
+
+The project will be found in `http://localhost:5173` after running it.  
