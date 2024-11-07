@@ -1,8 +1,53 @@
-# React + Vite
+# ClimateWatch Frontend 🌍
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Stay informed, Save the Earth**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
+
+ClimateWatch is a frontend project designed to keep users informed about weather conditions, climate resources, and their environmental impact. Through a clean and intuitive interface, users can access real-time weather updates, learn about climate-related news and resources, track their carbon footprint, and get involved in climate initiatives.
+
+### Features
+
+- **Real-Time Weather Updates**: Provides accurate, location-based weather information and forecasts.
+- **Climate Resources Hub**: A collection of articles, blogs, research papers, and news about climate change and weather patterns.
+- **Carbon Footprint Calculator**: A tool for users to estimate their carbon footprint based on daily activities and receive suggestions for reducing it.
+- **Volunteer Program**: A signup feature allowing users to apply for climate-related initiatives.
+- **Donation Platform**: Enables users to donate towards relief efforts for communities affected by climate disasters.
+
+## Live Site
+
+Explore the ClimateWatch frontend live: [ClimateWatch Live Site]()
+
+## Project Summary
+
+The ClimateWatch frontend provides users with a streamlined and informative experience for accessing weather and climate information. The real-time weather feature uses location data to keep users updated on current conditions. The Climate Resources Hub keeps users educated on climate change developments, while the carbon footprint calculator empowers them to make sustainable choices. Additionally, the volunteer and donation platforms encourage community action and support for climate-related causes.
+
+With ClimateWatch, users can not only stay informed but also contribute positively to climate awareness and action.
+
+---
+
+Thank you for exploring ClimateWatch and joining us in the effort towards a sustainable future!
+
+To clone and install the frontend locally, follow these steps:
+
+1. **Clone the repository:**
+#
+   ```bash
+   git clone https://github.com/NaimoonJannat/ClimateWatch-client.git
+   cd ClimateWatch-client
+   ```
+2. **Install Dependencies:**
+#
+```bash
+npm install
+```
+
+3. **Run the project**
+#
+```bash
+npm run dev
+```
+
+The project will be found in `http://localhost:5173` after running it.  
