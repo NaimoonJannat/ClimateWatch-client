@@ -53,7 +53,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <ul className="list-none flex flex-row gap-10">
               {navLinks.map((link, index) => (
-                <li
+                <li 
                   key={index}
                   className={`${active === link.path ? 'text-[#c9e265]' : 'text-[#214D5B]'} poppins font-medium cursor-pointer text-[18px]`}
                   onClick={() => setActive(link.path)}
