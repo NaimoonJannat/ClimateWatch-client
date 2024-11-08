@@ -26,7 +26,7 @@ const SingleProject = () => {
     briefDescriptions,
     projectBrief,
     addtionalImages,
-  } = project;
+  } = project || {};
 
   return (
     <div>

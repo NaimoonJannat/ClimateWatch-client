@@ -11,6 +11,7 @@ import CFC from "../Components/CFC/CFC";
 import Volunteers from "../Components/Volunteers/Volunteers";
 import Donation from "../Components/Donation/Donation";
 import SingleProject from "../Components/Projects/SingleProject";
+import SingleVolunteer from "../Components/Volunteers/SingleVolunteer";
 
 const router = createBrowserRouter([ 
     { 
@@ -53,6 +54,11 @@ const router = createBrowserRouter([
             {
                 path:"/volunteers",
                 element: <Volunteers/>
+            },
+            {
+                path:"/volunteers/:id",
+                element: <SingleVolunteer/>,
+                loader: () => fetch(`http://localhost:8000/volunteers`)
             },
             {
                 path:"/donations",
