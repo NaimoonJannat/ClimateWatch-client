@@ -37,7 +37,7 @@ const Home = () => {
         </Box>
       </Box>
       
-      <Weather/>
+      {/* <Weather/> */}
     </div>
   );
 };
