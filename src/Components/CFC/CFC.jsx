@@ -9,7 +9,7 @@ import PageBanner from "../Shared/PageBanner/PageBanner";
 
 import image from "../../assets/banner/CFC_banner.jpg";
 import { Slide } from "@mui/material";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import { IoMdCheckmark } from "react-icons/io";
 
 const steps = [
   "Daily Transportation (in km)",
@@ -196,10 +196,10 @@ export default function HorizontalLinearStepper() {
             {activeStep === steps.length ? (
               <Slide in={activeStep === steps.length} direction="up">
                 <Box sx={{ mt: 4, textAlign: "center" }}>
-                  <CheckCircleIcon
-                    color="success"
-                    sx={{ fontSize: 50, mb: 1 }}
-                  />
+                  <div className="flex justify-center items-center">
+                    <IoMdCheckmark className="text-2xl py-1 text-white border-lime-300 border-2 rounded-full bg-green-950" />
+                  </div>
+
                   <Typography variant="h6" gutterBottom>
                     All steps completed - you're finished!
                   </Typography>
