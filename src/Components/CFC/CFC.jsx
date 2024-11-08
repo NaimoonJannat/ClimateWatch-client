@@ -1,12 +1,10 @@
-
+import image from '../../assets/banner/CFC_banner.jpg'
 const CFC = () => {
-    return (
-        <div>
-            <h1 className="text-5xl">
-            ClimateWatch
-            </h1>
-        </div>
-    );
+  return (
+    <div>
+      <PageBanner image={image} pageName={"Carbon Footprint Calculator"} />
+    </div>
+  );
 };
 
 export default CFC;

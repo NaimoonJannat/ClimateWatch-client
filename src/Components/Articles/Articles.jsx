@@ -1,12 +1,12 @@
 import PageBanner from "../Shared/PageBanner/PageBanner";
-import image from '../../assets/banner/projects_banner.jpg'
+import image from '../../assets/banner/article_banner.jpg'
 
-const Projects = () => {
+const Articles = () => {
     return (
         <div>
         <PageBanner 
         image={image}
-        pageName={"Projects"}
+        pageName={"Articles"}
         
         />
             
@@ -14,4 +14,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default Articles;
