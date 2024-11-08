@@ -7,7 +7,7 @@ export default function PageBanner({ image, pageName }) {
         sx={{
           // width: '100vw',
           height: { xs: 200, sm: 300, md: 500 },
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(${image})`,  // Gradient overlay with background image
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(${image})`,  // Gradient overlay with background image
           backgroundSize: 'cover',
           backgroundRepeat:'no-repeat',
           backgroundPosition: 'center',

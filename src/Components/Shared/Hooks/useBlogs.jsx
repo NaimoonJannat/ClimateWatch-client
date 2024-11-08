@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const Blogs = () => {
+const useBlogs = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
@@ -13,5 +13,5 @@ const Blogs = () => {
   return [blogs]
 };
 
-export default Blogs;
+export default useBlogs;
 

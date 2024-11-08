@@ -1,4 +1,5 @@
 import image from '../../assets/banner/CFC_banner.jpg'
+import PageBanner from '../Shared/PageBanner/PageBanner';
 const CFC = () => {
   return (
     <div>

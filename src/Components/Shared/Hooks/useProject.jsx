@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const Project = () => {
+const useProjects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -13,4 +13,4 @@ const Project = () => {
   return [projects]
 };
 
-export default Project;
+export default useProjects;

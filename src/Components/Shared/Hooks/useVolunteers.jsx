@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const Volunteers = () => {
+const useVolunteers = () => {
   const [volunteers, setVolunteers] = useState([]);
 
   useEffect(() => {
@@ -13,5 +13,5 @@ const Volunteers = () => {
   return [volunteers]
 };
 
-export default Volunteers;
+export default useVolunteers;
 
