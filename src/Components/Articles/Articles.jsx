@@ -4,8 +4,7 @@ import { useEffect, useState } from "react";
 
 const Articles = () => {
     const [articles, setArticles] = useState([]);
-  const [error, setError] = useState(null);
-//   const apiKey = 'dd40d2f709fe45e79f380ea6d4d12ec8'; 
+  const [error, setError] = useState(null); 
 const apiKey = import.meta.env.VITE_APP_NEWS_API_KEY;
 
   useEffect(() => {
@@ -23,7 +22,7 @@ const apiKey = import.meta.env.VITE_APP_NEWS_API_KEY;
 
     fetchArticles();
   }, []);
-
+  
   if (error) return <p className="text-red-500">Error: {error}</p>;
     return (
         <div>

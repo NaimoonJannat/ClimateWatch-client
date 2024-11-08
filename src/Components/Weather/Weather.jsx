@@ -68,7 +68,7 @@ const Weather = () => {
     return (
         <div>
             {locationError ? (
-                <p>{locationError}</p>
+                <p>Sorry Data Can't be found</p>
             ) : weatherData ? (
                 <div>
                     <p>Temperature: {weatherData.temperature}°C</p>
