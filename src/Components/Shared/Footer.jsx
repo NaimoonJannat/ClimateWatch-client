@@ -1,4 +1,6 @@
-import {logo} from '../../assets/logo'
+import { Link } from "react-router-dom";
+
+import logo from "../../assets/logo/logo.png";
 const Footer = () => {
     return (
         <div>
@@ -7,12 +9,19 @@ const Footer = () => {
 <footer class="bg-white dark:bg-gray-900">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
-          <div class="mb-6 md:mb-0">
-              <a href={logo} class="flex items-center">
+        
+          {/* <div class="mb-6 md:mb-0">
+              <a href='ab' class="flex items-center">
                   <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
                   <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
               </a>
-          </div>
+          </div> */}
+          <Link to="/" className="flex items-center gap-2">
+            <img src={logo} alt="Climate Watch" className="sm:w-15 sm:h-15 w-12 h-12" />
+            <p className="hidden font-bold sm:text-2xl px-5 uppercase sm:block inter text-[#214d5b] lg:flex">
+              climate <span className="text-[#c9e265]">watch</span>
+            </p>
+          </Link>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
