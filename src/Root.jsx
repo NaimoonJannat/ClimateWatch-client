@@ -5,7 +5,7 @@ const Root = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div>
+            <div className="">
             <Outlet></Outlet>
             </div>
             
