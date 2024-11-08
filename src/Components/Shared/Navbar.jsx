@@ -83,14 +83,19 @@ const Navbar = () => {
           {
             user ? 
             (
-              <div className="text-center flex flex-col justify-center lg:items-center items-end">
+              <div className="flex flex-row justify-around items-center">
+                <div className="text-center flex flex-col justify-center lg:items-center items-end">
                         <div className="w-16 lg:w-20 rounded-full">
                           <img src={user?.photoURL} />
                         </div>
                         <p className="font-semibold hidden md:block">{user?.displayName
           }</p>
-          <button onClick={handleSignOut} className="text-xs font-bold rounded-lg bg-[#214D5B] p-1 text-[#C8E264] border-1 border-[#C8E264]">Log Out</button>
-                      </div>):
+          
+                      </div>
+                     <div>
+                     <button onClick={handleSignOut} className="text-xs  font-bold rounded-lg bg-[#214D5B] p-1 text-[#C8E264] border-1 border-[#C8E264]">Log Out</button>
+                     </div>
+              </div>):
             (  <div className="sm:flex sm:gap-4">
               <Link
                 className="rounded-md bg-[#C8E264] px-5 py-2.5 text-sm font-medium text-[#214D5B]"
