@@ -10,6 +10,7 @@ import Articles from "../Components/Articles/Articles";
 import CFC from "../Components/CFC/CFC";
 import Volunteers from "../Components/Volunteers/Volunteers";
 import Donation from "../Components/Donation/Donation";
+import SingleProject from "../Components/Projects/SingleProject";
 
 const router = createBrowserRouter([ 
     { 
@@ -34,6 +35,11 @@ const router = createBrowserRouter([
                 element: <Projects/>
             },
             {
+                path:"/projects/:id",
+                element: <SingleProject/>,
+                loader: () => fetch(`http://localhost:8000/projects`)
+            },
+            {
                 path:"/blogs",
                 element: <Blogs/>
             },{
@@ -51,6 +57,10 @@ const router = createBrowserRouter([
             {
                 path:"/donations",
                 element: <Donation/>
+            },
+            {
+                path:"/contact",
+                // element: <Contact/>
             }
             
         ]
