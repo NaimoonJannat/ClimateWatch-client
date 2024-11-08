@@ -25,12 +25,12 @@ const Navbar = () => {
     // { title: 'Home', path: '/' },
     // { title: 'Updates', path: '/updates' },
     { title: 'Projects', path: '/projects' },
-    { title: 'CFC', path: '/cfc' },
+    { title: 'CarbonCal', path: '/carbonFootprintCalculator' },
     { title: 'Articles', path: '/articles' },
     { title: 'Blogs', path: '/blogs' },
     { title: 'Volunteers', path: '/volunteers' },
     { title: 'Donation', path: '/donations' },
-    { title: 'Contact Us', path: '/contact' },
+    { title: 'Contact', path: '/contact' },
     
   ];
 

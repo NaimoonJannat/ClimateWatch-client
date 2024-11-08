@@ -1,10 +1,7 @@
 import PageBanner from "../Shared/PageBanner/PageBanner";
 import image from '../../assets/banner/projects_banner.jpg'
-import useProjects from "../Shared/Hooks/useProject";
 
-const Projects = () => {
-
-const [projects ] = useProjects()
+const ProjectsCard = () => {
     return (
         <div>
         <PageBanner 
@@ -12,14 +9,9 @@ const [projects ] = useProjects()
         pageName={"Projects"}
         
         />
-        
-        <div>
-        {
-        }
-        </div>
             
         </div>
     );
 };
 
-export default Projects;
+export default ProjectsCard;
