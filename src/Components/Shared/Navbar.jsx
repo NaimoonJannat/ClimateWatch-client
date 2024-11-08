@@ -22,7 +22,7 @@ const Navbar = () => {
   }, [location]);
 
   const navLinks = [
-    { title: 'Home', path: '/' },
+    // { title: 'Home', path: '/' },
     // { title: 'Updates', path: '/updates' },
     { title: 'Projects', path: '/projects' },
     { title: 'CFC', path: '/cfc' },
@@ -67,16 +67,16 @@ const Navbar = () => {
           <div className="flex gap-4">
             <div className="sm:flex sm:gap-4">
               <Link
-                className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-                to="/signin"
+                className="rounded-md bg-[#C8E264] px-5 py-2.5 text-sm font-medium text-[#214D5B]"
+                to="/login"
               >
                 Login
               </Link>
 
               <div className="hidden sm:flex">
                 <Link
-                  className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
-                  to="/signin"
+                  className="rounded-md bg-[#214D5B] px-5 py-2.5 text-sm font-medium text-[#C8E264]"
+                  to="/register"
                 >
                   Register
                 </Link>
