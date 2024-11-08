@@ -6,6 +6,8 @@ import VolunteerCard from "./VolunteerCard";
 const Volunteers = () => {
 
 const volunteers = useVolunteers()
+console.log('vol', volunteers);
+
 
     return (
         <div>
@@ -14,9 +16,9 @@ const volunteers = useVolunteers()
         pageName={"Volunteers"}
         
         />
-        <div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-6xl mx-auto">
         {
-        volunteers.map((volunteer, index) =>(
+        volunteers[0].map((volunteer, index) =>(
         <VolunteerCard 
         key={index}
         volunteer={volunteer}

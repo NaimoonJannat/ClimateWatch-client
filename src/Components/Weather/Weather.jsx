@@ -4,13 +4,13 @@ import cloud_icon from '../../assets/cloud.png';
 import drizzle_icon from '../../assets/drizzle.png';
 import rain_icon from '../../assets/rain.png';
 import snow_icon from '../../assets/snow.png';
-import Loader from '../Loader/Loader';
 
 
 const Weather = () => {
     const [weatherData, setWeatherData] = useState(null);
     const [locationError, setLocationError] = useState(null);
-
+    console.log(weatherData);
+    
     const allIcons = {
         "01d": clear_icon,
         "01n": clear_icon,
@@ -27,10 +27,21 @@ const Weather = () => {
         "13d": snow_icon,
         "13n": snow_icon,
     };
+    
+    // const fetchWeather = useEffect((latitude,longitude)=>{
+    // fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=efa8fa18075f8027079862ecbe50dca0`)
+    // .then(res => res.json())
+    // .then(data => setWeatherData(data))
+    // },[])
 
     const fetchWeather = async (latitude, longitude) => {
         try {
-            const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${import.meta.env.VITE_API_KEY}`;
+        console.log('hello');
+        
+            const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=efa8fa18075f8027079862ecbe50dca0`;
+            // const url = `https://api.open-meteo.com/v1/forecast?${latitude}&${longitude}&${hourly}&timezone=auto&past_days=7`
+            
+    
             const response = await fetch(url);
             const data = await response.json();
             console.log(data);
@@ -57,7 +68,7 @@ const Weather = () => {
                     fetchWeather(latitude, longitude);
                 },
                 (error) => {
-                    setLocationError("Location access denied. Unable to fetch weather data.");
+                    setLocationError("Location access denied. Unable to fetch weather data.", error);
                 }
             );
         } else {
@@ -67,9 +78,7 @@ const Weather = () => {
 
     return (
         <div>
-            {locationError ? (
-                <p>Sorry Data Can't be found</p>
-            ) : weatherData ? (
+            { weatherData ? (
                 <div>
                     <p>Temperature: {weatherData.temperature}°C</p>
                     <p>Location: {weatherData.location}</p>
@@ -83,8 +92,8 @@ const Weather = () => {
                     </div>
                 </div>
             ) : (
-                // <p>Loading...</p>
-             <Loader></Loader>
+                <p>Loading...</p>
+                
             )}
         </div>
     );
