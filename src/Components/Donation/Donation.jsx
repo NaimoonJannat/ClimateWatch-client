@@ -1,5 +1,6 @@
 import PageBanner from "../Shared/PageBanner/PageBanner";
 import image from '../../assets/banner/donation_banner.jpg'
+import Payment from "./Payment";
 
 const Donation = () => {
     return (
@@ -9,7 +10,7 @@ const Donation = () => {
         pageName={"Make Donation"}
         
         />
-            
+            <Payment></Payment>
         </div>
     );
 };
