@@ -15,7 +15,7 @@ const apiKey = import.meta.env.VITE_APP_NEWS_API_KEY;
         if (!response.ok) throw new Error('Failed to fetch articles');
 
         const data = await response.json();
-        setArticles(data.articles.slice(0, 20)); // Store the articles in state
+        setArticles(data.articles.slice(1, 50)); // Store the articles in state
       } catch (err) {
         setError(err.message);
       }
