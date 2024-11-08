@@ -15,7 +15,7 @@ export default function PageBanner({ image, pageName }) {
           alignItems: 'center',
           justifyContent: 'left',
           color: '#fff',
-          textAlign: 'center',
+          // textAlign: 'center',
           p: 2,
         }}
       >

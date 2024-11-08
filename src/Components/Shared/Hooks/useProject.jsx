@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const useProjects = () => {
   const [projects, setProjects] = useState([]);
@@ -6,9 +6,9 @@ const useProjects = () => {
   useEffect(() => {
     fetch(`http://localhost:8000/projects`)
       .then(res => res.json())
-      .then((data) => setProjects[data]);
+      .then(data => setProjects(data));
 
-    console.log(data);
+    console.log(projects);
   }, []);
   return [projects]
 };
