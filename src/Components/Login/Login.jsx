@@ -12,7 +12,7 @@ const Login = () => {
     const navigate = useNavigate();
 
     // const {signIn, signInGoogle, signInGithub} = useContext(AuthContext);
-    // const {signIn} = useContext(AuthContext);
+    const {signIn} = useContext(AuthContext);
 
    
 
