@@ -1,7 +1,3 @@
-
-import Loader from "../Loader/Loader";
-
-
 import { Box, Typography } from "@mui/material";
 import image from "../../assets/banner-img.jpg";
 import Weather from "../Weather/Weather";
@@ -44,7 +40,6 @@ const Home = () => {
       <Weather/>
     </div>
   );
-
-
+};
 
 export default Home;
